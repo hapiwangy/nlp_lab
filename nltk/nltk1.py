@@ -1,7 +1,9 @@
 import nltk
+import os
+path = os.getcwd() + "\\nltk\\example.txt"
 # 先引入文本
 file_text = ""
-with open("example.txt","r+", encoding="utf-8") as fp:
+with open(path,"r+", encoding="utf-8") as fp:
     file_text += fp.read()
 # print(file_text)
 
