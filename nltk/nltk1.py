@@ -5,7 +5,7 @@ path = os.getcwd() + "\\nltk\\example.txt"
 file_text = ""
 with open(path,"r+", encoding="utf-8") as fp:
     file_text += fp.read()
-# print(file_text)
+print(file_text)
 
 # 斷句
 sentence = nltk.sent_tokenize(file_text)
@@ -14,11 +14,11 @@ sentence = nltk.sent_tokenize(file_text)
 # 斷詞
 tokens = [nltk.tokenize.word_tokenize(sent) for sent in sentence]
 # for token in tokens:
-#     print(token)
+print(token)
 
 # POS
 pos = [nltk.pos_tag(token) for token in tokens]
-# print(pos)
+print(pos)
 
 # lemmatization(先簡化詞性再還原)
 # 這裡把標點符號歸類為n
